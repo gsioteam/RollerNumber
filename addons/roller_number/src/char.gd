@@ -48,7 +48,6 @@ func _draw():
 	var line_height = fn.get_height()
 	var offset = index - lower
 	var lower_str = self.char_set[lower]
-	print(self.index, " ", zero_blank, " ", int(self.index) != 0 or !zero_blank)
 	if int(self.index) != 0 or !zero_blank:
 		fn.draw(get_canvas_item(), Vector2(0, fn.get_ascent() + line_height * offset), lower_str, color)
 	if offset != 0:

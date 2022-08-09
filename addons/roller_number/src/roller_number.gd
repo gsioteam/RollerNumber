@@ -65,16 +65,15 @@ var _number = 0
 func set_number(v):
 	if _number != v:
 		_number = v
-		_current_number = v
 		_reload()
 
 func get_number():
 	return _number
 
-var _current_number: float
 func animate_to(number: int):
 	if _tween == null:
 		return
+	_number = number
 	var arr = bits(number)
 	make_bits(arr.size())
 	_tween.remove_all()
