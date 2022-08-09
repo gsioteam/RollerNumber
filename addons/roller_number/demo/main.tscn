@@ -9,14 +9,15 @@ anchor_bottom = 1.0
 script = ExtResource( 2 )
 
 [node name="col" type="VBoxContainer" parent="."]
-margin_left = 11.0
-margin_top = 50.0
+margin_left = 13.0
+margin_top = 23.0
 margin_right = 119.0
-margin_bottom = 116.0
+margin_bottom = 127.0
 
 [node name="RollerNumber" type="HBoxContainer" parent="col"]
-margin_right = 108.0
-margin_bottom = 14.0
+margin_right = 106.0
+margin_bottom = 41.0
+size_flags_vertical = 3
 custom_constants/separation = 0
 alignment = 2
 script = ExtResource( 1 )
@@ -24,14 +25,14 @@ number = 304
 duration = 4.0
 
 [node name="LineEdit" type="LineEdit" parent="col"]
-margin_top = 18.0
-margin_right = 108.0
-margin_bottom = 42.0
+margin_top = 45.0
+margin_right = 106.0
+margin_bottom = 69.0
 
 [node name="Label" type="Label" parent="col"]
-margin_top = 46.0
-margin_right = 108.0
-margin_bottom = 77.0
+margin_top = 73.0
+margin_right = 106.0
+margin_bottom = 104.0
 text = "Input numbers
 and press ENTER"
 
