@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/roller.png-c5fb18982654dd01881ebbc928a7881f.stex"
+path="res://.import/pic.png-73f32f45472c9d60e7ab38c7fb66f63f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/roller_label/src/roller.png"
-dest_files=[ "res://.import/roller.png-c5fb18982654dd01881ebbc928a7881f.stex" ]
+source_file="res://pic.png"
+dest_files=[ "res://.import/pic.png-73f32f45472c9d60e7ab38c7fb66f63f.stex" ]
 
 [params]
 

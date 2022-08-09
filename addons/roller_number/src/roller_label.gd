@@ -1,7 +1,7 @@
 tool
 extends HBoxContainer
 
-const CharWidget = preload("res://addons/roller_label/src/Char.tscn")
+const CharWidget = preload("res://addons/roller_number/src/Char.tscn")
 
 export (int) var number setget set_number, get_number
 export (float) var duration = 0.6
