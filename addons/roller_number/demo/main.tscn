@@ -16,22 +16,23 @@ margin_bottom = 116.0
 
 [node name="RollerLabel" type="HBoxContainer" parent="col"]
 margin_right = 108.0
+margin_bottom = 14.0
 custom_constants/separation = 0
 alignment = 2
 script = ExtResource( 1 )
 number = 304
-duration = 2.0
+duration = 4.0
 
 [node name="LineEdit" type="LineEdit" parent="col"]
-margin_top = 4.0
+margin_top = 18.0
 margin_right = 108.0
-margin_bottom = 28.0
+margin_bottom = 42.0
 
 [node name="Label" type="Label" parent="col"]
-margin_top = 32.0
+margin_top = 46.0
 margin_right = 108.0
-margin_bottom = 63.0
-text = "Input number 
+margin_bottom = 77.0
+text = "Input numbers
 and press ENTER"
 
 [connection signal="text_entered" from="col/LineEdit" to="." method="_on_LineEdit_text_entered"]
