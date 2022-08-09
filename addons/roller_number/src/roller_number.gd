@@ -89,7 +89,7 @@ func animate_to(number: int):
 			to_index = arr[idx]
 		var ch = _num_blocks[idx]
 		ch.visible = true
-		_tween.interpolate_property(ch, "index", ch.index, to_index, duration * (count - idx + 1.0) / count)
+		_tween.interpolate_property(ch, "index", ch.index, to_index, duration * (count - idx) / count)
 	_tween.start()
 
 func _on_tween(value: float):

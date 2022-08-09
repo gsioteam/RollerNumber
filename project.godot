@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="RollerLabel"
+run/main_scene="res://addons/roller_number/demo/main.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
