@@ -10,3 +10,4 @@ rect_clip_content = true
 size_flags_vertical = 4
 script = ExtResource( 1 )
 char_set = PoolStringArray( "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" )
+font_color = null

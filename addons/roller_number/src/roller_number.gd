@@ -19,6 +19,7 @@ func _ready():
 		_tween = Tween.new()
 		_tween.connect("tween_completed", self, "_on_tween_completed")
 		add_child(_tween)
+	_reload()
 
 func make_bits(bit_count):
 	if _block_size == Vector2.ZERO:
@@ -28,8 +29,8 @@ func make_bits(bit_count):
 		var ch = CharWidget.instance()
 		ch.rect_min_size = _block_size
 		ch.theme = theme
-		ch.font_color = font_color
-		ch.zero_blank = true
+		ch.font_color = self.font_color
+		ch.zero_blank = !_num_blocks.empty()
 		_num_blocks.append(ch)
 		add_child(ch)
 		move_child(ch, 0)
@@ -56,6 +57,8 @@ func bits(number: int) -> PoolIntArray:
 	while tmp != 0:
 		arr.append(tmp)
 		tmp = int(tmp / 10)
+	if arr.empty():
+		arr.append(0)
 	return arr
 
 var _number = 0
