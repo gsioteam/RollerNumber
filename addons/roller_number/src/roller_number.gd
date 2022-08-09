@@ -6,6 +6,8 @@ const CharWidget = preload("res://addons/roller_number/src/Char.tscn")
 export (int) var number setget set_number, get_number
 export (float) var duration = 0.6
 
+export (Color) var font_color = Color.transparent setget set_font_color, get_font_color
+
 var _block_size: Vector2
 var _num_blocks = []
 var _tween: Tween
@@ -26,6 +28,7 @@ func make_bits(bit_count):
 		var ch = CharWidget.instance()
 		ch.rect_min_size = _block_size
 		ch.theme = theme
+		ch.font_color = font_color
 		ch.zero_blank = true
 		_num_blocks.append(ch)
 		add_child(ch)
@@ -102,3 +105,13 @@ func get_animate_number():
 func _on_tween_completed(object, path):
 	if object.index == 0:
 		object.visible = false
+
+var _font_color = Color.transparent
+func set_font_color(v):
+	if _font_color != v:
+		_font_color = v
+		for ch in _num_blocks:
+			ch.font_color = v
+
+func get_font_color():
+	return _font_color
