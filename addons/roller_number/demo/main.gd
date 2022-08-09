@@ -18,4 +18,4 @@ func _ready():
 
 
 func _on_LineEdit_text_entered(new_text):
-	$col/RollerLabel.animate_to(int($col/LineEdit.text))
+	$col/RollerNumber.animate_to(int($col/LineEdit.text))

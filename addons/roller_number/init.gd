@@ -4,10 +4,10 @@ extends EditorPlugin
 
 func _enter_tree():
 	add_custom_type(
-		"RollerLabel",
+		"RollerNumber",
 		"HBoxContainer",
-		preload("res://addons/roller_label/src/roller_label.gd"),
-		preload("res://addons/roller_label/src/roller.png")
+		preload("res://addons/roller_number/src/roller_number.gd"),
+		preload("res://addons/roller_number/src/roller.png")
 	)
 
 
